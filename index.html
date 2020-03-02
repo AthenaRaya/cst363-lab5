@@ -28,9 +28,16 @@
         
         result.hits = _.shuffle(result.hits);//shuffle array 
                //alert(result.hit[0].webformatURL);
-           
+          
           $("#images").html(`<img src= ' ${result.hits[0].webformatURL}' width ='220' height = '400'>
            <br> Likes: ${result.hits[0].likes}`);
+           $("#images").html(`<img src= ' ${result.hits[1].webformatURL}' width ='220' height = '400'>
+           <br> Likes: ${result.hits[1].likes}`);
+            $("#images").html(`<img src= ' ${result.hits[2].webformatURL}' width ='220' height = '400'>
+           <br> Likes: ${result.hits[2].likes}`);
+            $("#images").html(`<img src= ' ${result.hits[3].webformatURL}' width ='220' height = '400'>
+           <br> Likes: ${result.hits[3].likes}`);
+          
           
            
           } 
