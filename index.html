@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Lab 5: Pixabay Search</title>
+  <style>
+        @import url("css/styles.css");
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
   <script>
@@ -26,11 +29,11 @@
         result.hits = _.shuffle(result.hits);//shuffle array 
                //alert(result.hit[0].webformatURL);
            
-           $("#images").html(`<img src= ' ${result.hits[0].webformatURL}' width ='220' height = '400'>
+          $("#images").html(`<img src= ' ${result.hits[0].webformatURL}' width ='220' height = '400'>
            <br> Likes: ${result.hits[0].likes}`);
+          
            
-         
-      } 
+          } 
         
   });//ajax           
 } // search()            
