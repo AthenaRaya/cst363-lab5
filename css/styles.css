@@ -1,9 +1,40 @@
 body {
     display: center;
-	padding-top: 70px;
+	padding-top: 50px;
 	background-color: gray;
 	 text-align: center;
 }
 
+.column {
+  border-radius: 25px;
+ 
+  display: flex;
+  float: left;
+  width: 50%;
+ 
+  width: 200px;
+  height: 150px;
+  padding: 25px 50px 50px 100px;
+ 
+}
 
 
+.row::after {
+  
+  border-radius: 25px;
+  
+  display: flex;
+  content: "";
+  clear: both;
+  display: table;
+  width: 200px;
+  height: 150px;
+  padding: 25px 50px 50px 100px;
+ 
+  
+}
+ 
+h1{
+	font-size: 3em;
+}
+  
