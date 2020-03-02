@@ -25,11 +25,10 @@
         
         result.hits = _.shuffle(result.hits);//shuffle array 
                //alert(result.hit[0].webformatURL);
-            
-           $("#images").html(`<img src= '${result.hits[0].webformatURL}' width ='220' height = '400'>
+           
+           $("#images").html(`<img src= ' ${result.hits[0].webformatURL}' width ='220' height = '400'>
            <br> Likes: ${result.hits[0].likes}`);
-            
-        
+           
          
       } 
         
@@ -45,8 +44,18 @@
     <h1>
       Pixabay Image Search
     </h1>
-    Keyword: <input id ="keyword" type="text"> <button id="searchBtn">Search</button>
+      Keyword: <input id ="keyword" type="text"> 
     <br><br>
+  Orientaion: 
+  <select id="O">
+     <option value= "">Select One</option>
+     <option value= "d">Vertical</option>
+     <option value= "h">Horizontal</option>
+  </select>
+  <button id="searchBtn">Search</button>
+  <br><br>
+   
+  
      <div id="images">
   </div>
 </body>
